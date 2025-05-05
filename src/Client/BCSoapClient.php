@@ -41,7 +41,7 @@ class BCSoapClient
 	{
 		try {
 			$opts = $this->prepareGetFilesOpts($prevQueryTimestamp, $filter);
-			$resp = $this->client->GetDownloadFileList_v2($opts);
+			$resp = $this->client->GetDownloadFileList_v4($opts);
 
 			return GetDownloadFileListResponse::fromResponse($resp);
 		} catch (SoapFault $e) {
