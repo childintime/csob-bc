@@ -161,6 +161,7 @@ class BCSoapClient
 			'Size'     => $f->getSize(),
 			'Format'   => $f->getFormat(),
 			'Mode'     => $f->getUploadMode(),
+			'SkipCheckDuplicates' => false,
 		];
 
 		if ($f->getSeparator() !== null) {
