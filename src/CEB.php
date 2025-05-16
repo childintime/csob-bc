@@ -87,4 +87,13 @@ final class CEB
 		return $this->api->download($file->getDownloadUrl());
 	}
 
+	/**
+	 * @return IAdvice|IReport|IImportProtocol
+	 */
+	public function readImportProtocol($file)
+	{
+		$file->setContent($file);
+		return $this->reader->read($file);
+	}
+
 }
