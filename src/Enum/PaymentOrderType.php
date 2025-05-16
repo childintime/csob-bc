@@ -6,6 +6,7 @@ final class PaymentOrderType
 {
 
 	public const WITH_PRIORITY = '01'; // prioritní příkazy k úhradě
+	public const INSTANT = '02'; // prioritní příkazy k úhradě
 	public const COMMON        = '11'; // běžné příkazy k úhradě
 	public const CASHING       = '32'; // Inkaso
 
