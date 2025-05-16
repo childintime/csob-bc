@@ -13,8 +13,8 @@ final class PaymentOrderType
 	public static function isValid(string $type): bool
 	{
 		return $type === self::WITH_PRIORITY ||
+			$type === self::INSTANT ||
 			$type === self::COMMON ||
 			$type === self::CASHING;
 	}
-
 }
